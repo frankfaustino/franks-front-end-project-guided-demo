@@ -52,7 +52,7 @@ class App extends Component {
   /* sends our updated note from our state (title, content)
   as a PUT request to our server */
   handleEdit = id => {
-    const { title, content, notes } = this.state
+    const { title, content } = this.state
 
     axios
       .put(`http://localhost:8888/note/edit/${id}`, { title, content })
@@ -115,7 +115,6 @@ class App extends Component {
         <Fragment>
           <NavBar />
           <div className="App">
-            <h1>Your Notes:</h1>
             <Route exact path="/" render={this.renderListView} />
             <Route path="/create" render={this.renderCreate} />
             <Route path="/note/:id" render={this.renderNote} />

@@ -16,6 +16,8 @@ body {
 }
 
 .NavBar {
+  display: flex;
+  flex-flow: column wrap;
   width: 20%;
   background-color: #d1d1d1;
 }
@@ -26,7 +28,11 @@ body {
   line-height: 2.25rem;
 }
 
-.ListView {
+.Container {
+  padding-left: 20px;
+}
+
+.Notes {
   display: flex;
   flex-flow: row wrap;
   height: 100vh;
@@ -40,4 +46,24 @@ body {
   margin: 10px;
   border: 1px solid #b9b9b9;
   background-color: white;
+}
+
+.Form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+.Form > * {
+  margin-bottom: 10px;
+}
+
+.Form input {
+  width: 40%;
+  height: 25px;
+}
+
+.Form textarea {
+  width: 80%;
+  height: 400px;
 }
