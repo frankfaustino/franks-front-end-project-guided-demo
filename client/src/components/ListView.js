@@ -8,9 +8,9 @@ const ListView = ({ notes }) => (
       {notes.map((note, i) => {
         return (
           <Link to={{ pathname: `/note/${note._id}`, note }} key={i}>
-            <div className='Note__container'>
-              <div>{note.title}</div>
-              <div>{note.content}</div>
+            <div className='Note__container' >
+              <h4>{note.title}</h4>
+              <span>{note.content}</span>
             </div>
           </Link>
         )

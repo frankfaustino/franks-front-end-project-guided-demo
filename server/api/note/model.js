@@ -14,8 +14,7 @@ const schema = new Schema({
   },
   title: {
     type: String,
-    maxlength: 24,
-    required: true
+    default: ''
   }
 })
 
